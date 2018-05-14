@@ -1,0 +1,55 @@
+angular.module('starter.WaterHistoryCtrl', [])
+
+    .controller('WaterHistoryCtrl', function($scope,$state,service,$rootScope,$timeout,
+                                             $ionicViewSwitcher,$ionicHistory,$ionicNavBarDelegate,$ionicPopup,$ionicActionSheet) {
+        //判断手机端才能使用
+        // $ionicNavBarDelegate.showBar(false);
+        // var ua = navigator.userAgent.toLowerCase();
+        // var btypeInfo = (ua.match( /aliapp/g ) || "other")[ 0 ];
+        // $scope.appType = false;
+        //
+        // if(btypeInfo == "aliapp"){
+        //     $scope.appType = true;
+        // }else{
+        //     $scope.appType = false;
+        // }
+        $scope.appType = true;
+        $scope.toWaterInput = function (item) {
+            var ob = {
+                typeCode: "history",
+                codeForWater1: item.codeForWater1,
+                codeForWater2: item.codeForWater2,
+                codeForWater3: item.codeForWater3,
+                address : "618",
+                name : "huzhiyong",
+                telephone : "6252306",
+                cellphone : "17317147433",
+            }
+            var jsonString = JSON.stringify(ob);
+            $ionicViewSwitcher.nextDirection('forward');
+            $state.go('tab.WaterInput',{jsonString:jsonString});
+        }
+        var dataList = new Array();
+        for(var i=0;i<4;i++){
+            var ob = {
+                codeForWater1:i,
+                codeForWater2:i+1,
+                codeForWater3:i+2,
+            }
+            dataList.push(ob);
+        }
+        $scope.listData = dataList;
+        //钉钉标题设置
+        // dd.ready(function() {
+        //     dd.biz.navigation.setTitle({
+        //         title : '历史订单',//控制标题文本，空字符串表示显示默认文本
+        //         onSuccess : function(result) {
+        //             /*结构
+        //             {
+        //             }*/
+        //         },
+        //         onFail : function(err) {}
+        //     });
+        //     dd.ui.webViewBounce.disable();
+        // });
+    });

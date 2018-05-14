@@ -1,0 +1,44 @@
+<ion-view view-title="" hide-nav-bar="true" style="background-color: white" hide-tabs="true" ng-show="appType">
+        <ion-content style="padding-top: 0px" overflow-scroll="true" scroll="true">
+            <div class="container">
+                <div class="column">
+                    <div class="row">
+                        <div class="col" ng-click="takeToUrl('wifi')" style="background-color: #00b3ee;height: 100px;box-shadow: #8a6d3b;">
+                            <div style="margin-top: 40px;margin-left: 20%">wifi</div>
+                        </div>
+                        <div class="col" ng-click="takeToUrl('bus')" style="background-color: #3e8f3e;height: 100px">
+                            <div style="margin-top: 40px;margin-left: 20%">bus</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" ng-click="takeToUrl('volunteer')" style="background-color: #9acfea;height: 100px;">
+                            <div style="margin-top: 40px;margin-left: 20%">志愿者</div>
+                        </div>
+                        <div class="col" ng-click="takeToUrl('pasty')" style="background-color: #245580;height: 100px;">
+                            <div style="margin-top: 40px;margin-left: 20%">订餐</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" ng-click="takeToUrl('helperwater')" style="background-color: #9acfea;height: 100px;">
+                            <div style="margin-top: 40px;margin-left: 20%">送水服务</div>
+                        </div>
+                        <div class="col" ng-click="takeToUrl('helpercomputerRepair')" style="background-color: #9acfea;height: 100px;">
+                            <div style="margin-top: 40px;margin-left: 20%">终端保修</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </ion-content>
+</ion-view>
+
+
+<ion-view view-title="" hide-nav-bar="true" style="background-color: white;z-index: 9999" hide-tabs="true" ng-show="!appType">
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>
+
+

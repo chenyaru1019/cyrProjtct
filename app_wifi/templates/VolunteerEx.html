@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title></title>
+    <style>
+        body{
+            background:#f5f5f5;
+            margin:0px;
+        }
+        h3{
+            padding:0 16px ;
+
+        }
+        .div-text p{
+            padding:0 16px ;
+
+        }
+        .div-text h4{
+            padding-left:16px; ;
+
+        }
+    </style>
+</head>
+<body>
+<!-- 自适应屏幕大小JS代码 -->
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<div ng-show="appType">
+    <div class="row"
+         style="padding-bottom: 5px;padding-top: 5px;padding-left: 15px;padding-right: 15px;background-color: #E5E5E4">
+        <div class="col-20"  style="padding-top: 4px">
+            <!--<img src="../img/back.png" style="height: 20px">-->
+        </div>
+        <!--<div class="col-20" ng-click="volunteerExCancel()" style="padding-top: 4px">-->
+            <!--<img src="../img/back.png" style="height: 20px">-->
+        <!--</div>-->
+        <div class="col-60"
+             style="text-align: center;font-size: 17px;font-weight: bold;vertical-align: middle;padding-top: 5px;color: black">
+            志愿者活动注意事项
+        </div>
+    </div>
+    <ion-content style="padding-top: 0px;margin-top: 50px" >
+        <div class="div-text" style="padding-top: 10px">
+            <!-- <div style="width:60px;height:60px;margin:10px auto;">
+                <img src="./icon2.png" style="width:100%;height:100%;"/>
+            </div> -->
+            <h4>1、	志愿服务任务时长规则：</h4>
+            <p>
+                每半年发布一次志愿者时长任务，正式员工志愿服务时间为6小时，党员增加2小时，为8小时。
+            </p>
+            <h4>2、	预约和取消规则：</h4>
+            <p>
+                可通过电脑和手机预约选岗。当天可预约3天后至未来30天内的志愿者岗位。确认志愿服务预约成功后可将预约的任务计划添加到909日历提醒，需要在任务前3天以上可取消预约。为避免部门内同时预约人数过多，人数大于10人的部门当日志愿者人数不能超过30%，人数小于等于10人的部门当日志愿者人数不超过50%。
+            </p>
+            <h4>3、	签到和签退规则：</h4>
+            <p>
+                点击志愿者任务界面“签到“按钮，跳出扫码页面，扫描车站提供的签到二维码，确认签到成功后开始志愿者工作。当任务执行完毕后，扫描车站提供签退二维码，签退完成任务。签到优先级为二维码签到-电脑端人工签到-纸质签到。
+            </p>
+            <p>
+                （1）签到：最多可提前半小时签到，提前签到实际记录时间为任务规定开始时间。低于单次最少完成时长1小时或者任务时间已结束将无法签到。（例如，车站提供需求7:00-9:00,志愿者6:45到站签到，8:45签退，实际任务时间为7:00-8:45共1小时45分钟）
+            </p>
+            <p>
+                （2）签退：需完成至少1小时任务，可以签退，签退时间为实际签退时间。任务完成后最晚可延迟300分钟签退，实际记录时间为任务要求结束时间。（例如，车站提供需求7:00-9:00,志愿者7:15到站签到，9:15签退，实际任务时间为7:15-9:00共1小时45分钟）
+            </p>
+            <p>
+                （3）若手机无法扫描二维码进行签到或签退，可联系车站工作人员进行手工签到或签退，需填写原因。电脑端无法实现签到时，可在车站纸质签到簿上签到，拍照并通过本部门志愿者负责人汇总至总队，后台处理签到签退情况。
+            </p>
+            <h4>4、	任务认定完成、未完成、缺勤规则：</h4>
+            <p>
+                （1）任务完成：签到签退计算时长超过1小时，按分钟计算，记录时长，任务状态显示为已完成。
+            </p>
+            <p>
+                （2）任务未完成：任务签到但未能在任务结束后300分钟内签退，任务状态为未完成，不计入完成时长。任务签到签退但完成时长低于1小时，任务状态为未完成，不计入完成时长。车站电脑人工签退时间超过300分钟也会认定为未完成。
+            </p>
+            <p>
+                （3）任务缺勤：未能在任务期间内签到签退，任务状态为缺勤，无时长统计。
+            </p>
+            <h4>5、	排行统计：</h4>
+            <p>
+                （1）	个人排行按照个人完成总时长排序，显示前20名志愿者，排名周期为半年。
+            </p>
+            <p>
+                （2）	支部排行按照支部内完成率高低（实际完成时数/支部所有人任务时数总和），排名周期为半年。
+            </p>
+            <h4>6、	考核规则：</h4>
+            <p>
+                （1）	集团对单位、支部每半年进行考核，考核标准为支部完成率超过90%。
+            </p>
+            <p>
+                （2）	各单位、支部对本单位的员工进行考核，考核标准由本单位党组织决定。
+            </p>
+            <p>
+                （3）	志愿者参与情况将作为各类先进评选的重要参考依据。
+            </p>
+            <p>
+                （4）	如员工因特殊情况不能参与志愿者工作，所在单位党组织确认后提交申请，可减免志愿者任务。
+            </p>
+        </div>
+        <div style="height:110px;width:100%;"></div>
+    </ion-content>
+    <!-- 	<div class="footer" style="width:100%;height:60px;position:fixed;bottom:0px;background:#129b80;margin:0 auto;text-align:center;">
+             <div style="width:40px;height:40px;padding:10px 0;float:left;">
+                <img src="logo.png" style="width:100%;height:100%;"/>
+            </div>
+            <div style="">
+                <p style="margin:0px;font-size:1em ;color:white;font-family:黑体;text-align:left;">上海申通地铁集团有限公司</p>
+                <p style="margin:0px; font-size:0.8em;color:white;font-family:黑体;text-align:left;">Shanghai Shentong Metro Group Co.,Ltd. </p>
+            </div>
+
+
+
+        </div> -->
+
+
+    <img src="../img/bottom.png" style="width:100%;position:fixed;bottom:0px;"/>
+</div>
+
+<div ng-show="!appType">
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+

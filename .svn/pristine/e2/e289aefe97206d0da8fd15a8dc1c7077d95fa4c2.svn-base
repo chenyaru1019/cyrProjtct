@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="33afb589-a0fa-4032-8623-074eeededb70" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_wifi/js/HelperComputerCtrl.js" afterPath="$PROJECT_DIR$/app_wifi/js/HelperComputerCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_wifi/js/HelperOfficeCtrl.js" afterPath="$PROJECT_DIR$/app_wifi/js/HelperOfficeCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_wifi/js/HelperPropertyCtrl.js" afterPath="$PROJECT_DIR$/app_wifi/js/HelperPropertyCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_wifi/templates/HelperComputer.html" afterPath="$PROJECT_DIR$/app_wifi/templates/HelperComputer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_wifi/templates/HelperOffice.html" afterPath="$PROJECT_DIR$/app_wifi/templates/HelperOffice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_wifi/templates/HelperProperty.html" afterPath="$PROJECT_DIR$/app_wifi/templates/HelperProperty.html" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PastyCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_wifi/js/PastyCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2695">
+              <caret line="33" column="11" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="33" selection-end-column="11" />
+              <folding>
+                <marker date="1522761242980" expanded="true" signature="17319:17365" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelperComputerCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_wifi/js/HelperComputerCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="205" column="10" lean-forward="false" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
+              <folding>
+                <marker date="1522764113955" expanded="true" signature="5712:5758" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelperOfficeCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_wifi/js/HelperOfficeCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="204" column="10" lean-forward="false" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="10" />
+              <folding>
+                <marker date="1522764113949" expanded="true" signature="5707:5753" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelperPropertyCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_wifi/js/HelperPropertyCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="36" />
+              <folding>
+                <marker date="1522764113929" expanded="true" signature="5492:5538" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelperOffice.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_wifi/templates/HelperOffice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
+              <folding>
+                <marker date="1522763813611" expanded="false" signature="197:208" ph="..." />
+                <marker date="1522763813611" expanded="false" signature="254:355" ph="..." />
+                <marker date="1522763813611" expanded="false" signature="408:424" ph="..." />
+                <marker date="1522763813611" expanded="false" signature="878:983" ph="..." />
+                <marker date="1522763813611" expanded="false" signature="1107:1172" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelperProperty.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_wifi/templates/HelperProperty.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
+              <folding>
+                <marker date="1522763821629" expanded="false" signature="197:208" ph="..." />
+                <marker date="1522763821629" expanded="false" signature="254:355" ph="..." />
+                <marker date="1522763821629" expanded="false" signature="408:424" ph="..." />
+                <marker date="1522763821629" expanded="false" signature="878:983" ph="..." />
+                <marker date="1522763821629" expanded="false" signature="1107:1172" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelperComputer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_wifi/templates/HelperComputer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="111" column="142" lean-forward="false" selection-start-line="111" selection-start-column="132" selection-end-line="111" selection-end-column="142" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <marker date="1522763486240" expanded="false" signature="197:208" ph="..." />
+                <marker date="1522763486240" expanded="false" signature="254:355" ph="..." />
+                <marker date="1522763486240" expanded="false" signature="408:424" ph="..." />
+                <marker date="1522763486240" expanded="false" signature="878:983" ph="..." />
+                <marker date="1522763486240" expanded="false" signature="1105:1170" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PastyMenuCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_wifi/js/PastyMenuCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_wifi/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4035">
+              <caret line="269" column="14" lean-forward="false" selection-start-line="269" selection-start-column="14" selection-end-line="269" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_wifi/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>请选择</find>
+      <find>feedback</find>
+      <find>sign</find>
+      <find>Sign</find>
+      <find>toMyQuery</find>
+      <find>signIntimeCN</find>
+      <find>serviceStarttimeCN</find>
+      <find>firefox|chrome|safari|opera|aliapp</find>
+      <find>getWifiDownloadUrl</find>
+      <find>go</find>
+      <find>systemOS</find>
+      <find>alert(</find>
+      <find>navigation.close</find>
+      <find>dataListNew.length</find>
+      <find>dd.ready</find>
+      <find>weeksImg</find>
+      <find>weeks</find>
+      <find>getSignDetail</find>
+      <find>apiPath</find>
+      <find>localStorage</find>
+      <find>getEverydaySupply</find>
+      <find>getDdFromAPP</find>
+      <find>getCompanyAndDept</find>
+      <find>getLineStationWithLine</find>
+      <find>name</find>
+      <find>parent</find>
+      <find>setitem</find>
+      <find>json</find>
+      <find>peopleName</find>
+      <find>$scope.peopleName = nameT;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app_wifi/templates/PastyFinally.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/PastyMenuQuery.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/PastyMyQuery.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/PastyQuerySure.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/Volunteer.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerConfirm.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerFeedBack.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerMy.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerMyFinish.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerMyQuery.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerMyQuit.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerOrderByTime.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerOrderCount.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerOrderLine.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerOrderStation.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerRank.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerStationQuery.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/Wifi.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/WifiFix.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/WifiVisitor.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/VolunteerEx.html" />
+        <option value="$PROJECT_DIR$/app_partyDues/views/tpl/partyMain.html" />
+        <option value="$PROJECT_DIR$/app_partyDues/views/tpl/partyQuery.html" />
+        <option value="$PROJECT_DIR$/app_partyDues/scripts/angular/controllers.js" />
+        <option value="$PROJECT_DIR$/app_partyDues/views/tpl/partyPerson.html" />
+        <option value="$PROJECT_DIR$/app_partyDues/views/tpl/partyBranch.html" />
+        <option value="$PROJECT_DIR$/app_wifi/js/MainVCCtrl.js" />
+        <option value="$PROJECT_DIR$/app_partyDues/scripts/angular/app.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/WifiFixCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/WifiCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/WifiVisitorCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/BusCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/VolunteerCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/VolunteerOrderLineCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/VolunteerOrderStationCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/PastyMy.html" />
+        <option value="$PROJECT_DIR$/app_wifi/js/PastyMyCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/PastyQuerySureCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/PastyFinallyCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/PastyMenu.html" />
+        <option value="$PROJECT_DIR$/app_wifi/js/PastyMenuCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/app.js" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/Pasty.html" />
+        <option value="$PROJECT_DIR$/app_wifi/js/services.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/PastyCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/HelperComputer.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/HelperOffice.html" />
+        <option value="$PROJECT_DIR$/app_wifi/templates/HelperProperty.html" />
+        <option value="$PROJECT_DIR$/app_wifi/js/HelperPropertyCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/HelperComputerCtrl.js" />
+        <option value="$PROJECT_DIR$/app_wifi/js/HelperOfficeCtrl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path>/usr/local/bin/bower</exe-path>
+    <config-path>$PROJECT_DIR$/bower.json</config-path>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="234" />
+    <option name="y" value="383" />
+    <option name="width" value="1296" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WWWBase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WWWBase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WWWBase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WWWBase" type="462c0819:PsiDirectoryNode" />
+              <item name="app_wifi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WWWBase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WWWBase" type="462c0819:PsiDirectoryNode" />
+              <item name="app_wifi" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WWWBase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WWWBase" type="462c0819:PsiDirectoryNode" />
+              <item name="app_wifi" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.2.1" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="jsx.switch.disabled" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app_partyDues/img" />
+      <recent name="$PROJECT_DIR$/app_wifi/img" />
+      <recent name="$PROJECT_DIR$/app_wifi/js" />
+      <recent name="$PROJECT_DIR$/app/js" />
+      <recent name="$PROJECT_DIR$/app/scripts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xiangmu\909\Bus_android_ionic\WWWBase\app\img" />
+      <recent name="E:\xiangmu\909\Bus_android_ionic\WWWBase\app\js" />
+      <recent name="E:\xiangmu\909\Bus_android_ionic\WWWBase\app\templates" />
+      <recent name="E:\xiangmu\909\Bus_android_ionic\WWWBase\app\bower_components" />
+      <recent name="E:\xiangmu\909\Bus_android_ionic\WWWBase\app\morejs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.bin/www" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33afb589-a0fa-4032-8623-074eeededb70" name="Default" comment="" />
+      <created>1508333974801</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1508333974801</updated>
+      <workItem from="1508333976257" duration="4281000" />
+      <workItem from="1508338549715" duration="158000" />
+      <workItem from="1508338817542" duration="3890000" />
+      <workItem from="1508381652414" duration="85000" />
+      <workItem from="1508381767976" duration="12221000" />
+      <workItem from="1508398164429" duration="18000" />
+      <workItem from="1508398524422" duration="7219000" />
+      <workItem from="1508466085649" duration="159000" />
+      <workItem from="1508466330852" duration="1997000" />
+      <workItem from="1508468817026" duration="662000" />
+      <workItem from="1508722065891" duration="11000" />
+      <workItem from="1508823042880" duration="4000" />
+      <workItem from="1508827691250" duration="247000" />
+      <workItem from="1508833220293" duration="492000" />
+      <workItem from="1509331212709" duration="1650000" />
+      <workItem from="1509334030580" duration="3000" />
+      <workItem from="1509334386099" duration="647000" />
+      <workItem from="1509335148907" duration="16876000" />
+      <workItem from="1509413537592" duration="660000" />
+      <workItem from="1509414371901" duration="27896000" />
+      <workItem from="1510557214314" duration="975000" />
+      <workItem from="1510558625488" duration="22000" />
+      <workItem from="1510559233255" duration="15000" />
+      <workItem from="1510559734392" duration="6000" />
+      <workItem from="1510559865240" duration="7655000" />
+      <workItem from="1510623214178" duration="26200000" />
+      <workItem from="1510711101247" duration="21538000" />
+      <workItem from="1510797538724" duration="25022000" />
+      <workItem from="1510882842667" duration="20686000" />
+      <workItem from="1511236716895" duration="6717000" />
+      <workItem from="1511254341562" duration="1489000" />
+      <workItem from="1511318400384" duration="2095000" />
+      <workItem from="1511320906790" duration="14252000" />
+      <workItem from="1511339200687" duration="1000" />
+      <workItem from="1511343866252" duration="786000" />
+      <workItem from="1511409400805" duration="7000" />
+      <workItem from="1511409549740" duration="9637000" />
+      <workItem from="1512008272405" duration="1158000" />
+      <workItem from="1512010833408" duration="2947000" />
+      <workItem from="1512027000836" duration="7246000" />
+      <workItem from="1512104359078" duration="14155000" />
+      <workItem from="1512126082947" duration="1693000" />
+      <workItem from="1512354057827" duration="9079000" />
+      <workItem from="1512437352885" duration="381000" />
+      <workItem from="1512438304122" duration="17351000" />
+      <workItem from="1512526082510" duration="5407000" />
+      <workItem from="1512537121379" duration="7296000" />
+      <workItem from="1512637471118" duration="1775000" />
+      <workItem from="1512963812439" duration="29053000" />
+      <workItem from="1513069637047" duration="138000" />
+      <workItem from="1513237216593" duration="7267000" />
+      <workItem from="1513302308714" duration="381000" />
+      <workItem from="1513840759548" duration="4044000" />
+      <workItem from="1513906618132" duration="9094000" />
+      <workItem from="1514167814006" duration="6009000" />
+      <workItem from="1514187401101" duration="838000" />
+      <workItem from="1514189302874" duration="2611000" />
+      <workItem from="1514275842940" duration="1273000" />
+      <workItem from="1514278480511" duration="507000" />
+      <workItem from="1514280226243" duration="2374000" />
+      <workItem from="1514339355009" duration="2739000" />
+      <workItem from="1514357881456" duration="6228000" />
+      <workItem from="1514438712427" duration="1472000" />
+      <workItem from="1514944843196" duration="19000" />
+      <workItem from="1514955931372" duration="635000" />
+      <workItem from="1515382971226" duration="7443000" />
+      <workItem from="1515575673497" duration="419000" />
+      <workItem from="1520834555524" duration="23472000" />
+      <workItem from="1521014925567" duration="5001000" />
+      <workItem from="1522761654700" duration="2234000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="398018000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="234" y="383" width="1296" height="877" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30382776" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20373514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26205787" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/VolunteerStationQuery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="79" selection-end-line="0" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/WifiFix.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="78" lean-forward="false" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/WifiVisitor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/Wifi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="78" lean-forward="false" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_partyDues/views/tpl/partyMain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_partyDues/views/tpl/partyPerson.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="73" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_partyDues/views/tpl/partyQuery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="75" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/VolunteerEx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="136" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/VolunteerExCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/WifiFixCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/WifiCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/WifiVisitorCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/MainVCCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/VolunteerOrderLineCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="22" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_partyDues/img/wrong.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/VolunteerCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" column="22" lean-forward="false" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_partyDues/views/tpl/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_partyDues/views/tpl/partyBranch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_partyDues/scripts/angular/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_partyDues/scripts/angular/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6165">
+          <caret line="411" column="2" lean-forward="false" selection-start-line="411" selection-start-column="2" selection-end-line="411" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/VolunteerOrderStationCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/img/ic_dish_specialday.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/PastyMyCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/PastyMenuQuery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="79" selection-end-line="0" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/PastyMenuQueryCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/PastyQuerySureCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="11" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/PastyMyQuery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="112" lean-forward="false" selection-start-line="0" selection-start-column="112" selection-end-line="0" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/PastyQuerySure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="110" lean-forward="false" selection-start-line="0" selection-start-column="110" selection-end-line="0" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/PastyFinally.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/PastyFinallyCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/bower_components/ionic/src/components/list/list.wp.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="146" column="26" lean-forward="false" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/PastyMenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="43" column="85" lean-forward="false" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/PastyMy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/xback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/ti-segmented-control.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/BusCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/Pasty.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="99" lean-forward="false" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
+          <folding>
+            <element signature="n#style#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-view#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-content#0;n#ion-view#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-content#0;n#ion-view#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-view#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4035">
+          <caret line="269" column="14" lean-forward="false" selection-start-line="269" selection-start-column="14" selection-end-line="269" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/PastyMenuCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/PastyCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2695">
+          <caret line="33" column="11" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <marker date="1522761242980" expanded="true" signature="17319:17365" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/HelperComputer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="111" column="142" lean-forward="false" selection-start-line="111" selection-start-column="132" selection-end-line="111" selection-end-column="142" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <marker date="1522763486240" expanded="false" signature="197:208" ph="..." />
+            <marker date="1522763486240" expanded="false" signature="254:355" ph="..." />
+            <marker date="1522763486240" expanded="false" signature="408:424" ph="..." />
+            <marker date="1522763486240" expanded="false" signature="878:983" ph="..." />
+            <marker date="1522763486240" expanded="false" signature="1105:1170" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/HelperOffice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <marker date="1522763813611" expanded="false" signature="197:208" ph="..." />
+            <marker date="1522763813611" expanded="false" signature="254:355" ph="..." />
+            <marker date="1522763813611" expanded="false" signature="408:424" ph="..." />
+            <marker date="1522763813611" expanded="false" signature="878:983" ph="..." />
+            <marker date="1522763813611" expanded="false" signature="1107:1172" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/templates/HelperProperty.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <marker date="1522763821629" expanded="false" signature="197:208" ph="..." />
+            <marker date="1522763821629" expanded="false" signature="254:355" ph="..." />
+            <marker date="1522763821629" expanded="false" signature="408:424" ph="..." />
+            <marker date="1522763821629" expanded="false" signature="878:983" ph="..." />
+            <marker date="1522763821629" expanded="false" signature="1107:1172" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/HelperPropertyCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <marker date="1522764113929" expanded="true" signature="5492:5538" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/HelperComputerCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="205" column="10" lean-forward="false" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
+          <folding>
+            <marker date="1522764113955" expanded="true" signature="5712:5758" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_wifi/js/HelperOfficeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="204" column="10" lean-forward="false" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="10" />
+          <folding>
+            <marker date="1522764113949" expanded="true" signature="5707:5753" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

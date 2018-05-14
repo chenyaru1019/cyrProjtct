@@ -1,0 +1,35 @@
+<ion-view view-title="" hide-nav-bar="true"  hide-tabs="true" ng-show="appType">
+    <ion-header-bar class="bar-clear" style="background-color: white;padding: 0px">
+
+    </ion-header-bar>
+    <ion-content style="padding-top: 0px;" >
+        <div style="width:100%;height:100%;">
+            <div style="width: 100%;text-align: center;padding-top: 20%">
+                <img src="../img/ic_ok.png" style="height: 60px">
+            </div>
+            <div style="color: black;text-align: center;padding-top: 10px">
+                已确认
+            </div>
+            <div style="color: black;text-align: center;padding-top: 10px">
+                请于{{dtDate}} 12点之前领取
+            </div>
+            <div style="color: black;text-align: center;">
+                逾期作废
+            </div>
+            <div style="color: black;text-align: center;margin-top: 30px" ng-click="toPastyMy()">
+                可在我的预定中查看
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
+
+<ion-view view-title="" hide-nav-bar="true" style="background-color: white;z-index: 9999" hide-tabs="true" ng-show="!appType">
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>
+
+
+

@@ -1,0 +1,106 @@
+<ion-view view-title="" hide-nav-bar="true"  hide-tabs="true">
+    <ion-header-bar class="bar-clear" style="background-color: white;padding: 0px" ng-show="appType">
+        <div style="width: 100%;background-color: #E5E5E4">
+            <div class="row" style="padding-bottom: 5px;padding-top: 5px;padding-left: 15px;padding-right: 15px;background-color: #E5E5E4">
+                <div class="col-25"  style="padding-top: 4px">
+                    <!--<img src="../img/back.png" style="height: 20px">-->
+                </div>
+                <!--<div class="col-25" ng-click="volunteerOrderLineCancel()" style="padding-top: 4px">-->
+                    <!--<img src="../img/back.png" style="height: 20px">-->
+                <!--</div>-->
+                <div  class="col-50" style="text-align: center;font-size: 20px;font-weight: bold;vertical-align: middle;padding-top: 5px;color: black">
+                    预约时间
+                </div>
+                <div class="col-25"  style="padding-top: 4px;color: #68a948;text-align: right;padding-top: 8px" ng-click="volunteerOrderLineCancel()">
+                    按线路预约
+                </div>
+            </div>
+            <div style="background-color: #6B6B6B;height: 1px;width: 100%">
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-content style="padding-top: 0px" ng-show="appType">
+
+        <div style="width: 100%;height: 30px;background-color: #E5E5E4" class="row">
+            <div style="width:14%;text-align: center;color: #0f0f0f;font-size: 13px;margin-left: 1% ">日</div>
+            <div style="width:14%;text-align: center;color: #0f0f0f;font-size: 13px; ">一</div>
+            <div style="width:14%;text-align: center;color: #0f0f0f;font-size: 13px; ">二</div>
+            <div style="width:14%;text-align: center;color: #0f0f0f;font-size: 13px; ">三</div>
+            <div style="width:14%;text-align: center;color: #0f0f0f;font-size: 13px; ">四</div>
+            <div style="width:14%;text-align: center;color: #0f0f0f;font-size: 13px; ">五</div>
+            <div style="width:14%;text-align: center;color: #0f0f0f;font-size: 13px;">六</div>
+        </div>
+
+        <div ng-repeat="mouthData in dataMouthList">
+            <div style="color: #5cb85c;text-align: center;width: 100%;height: 36px;font-size: 16px;padding-top: 8px">{{mouthData.title}}</div>
+            <div ng-repeat="weekData in mouthData.mouthD">
+                <div style="width: 100%;height: 50px;margin-top: 4px" class="row">
+                    <div style="width:14%;border-top:{{weekData[0].topColor}};margin-left: 1%" ng-click="choseOneDay(weekData[0])">
+                        <!--<div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 8px">{{weekData[0].textT}}</div>-->
+                        <div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 5px;">
+                            <div style="width: 30px;height: 30px;background-color: {{weekData[0].todayC}};border-radius: 15px;padding-top: 3px;margin-left: 20%;color:{{weekData[0].todayT}}">{{weekData[0].textT}}</div>
+                        </div>
+                        <div style="background-color: #5cb85c;width: 8px;height: 8px;border-radius: 4px;margin-left: 40%" ng-show={{weekData[0].showTop}}></div>
+                    </div>
+                    <div style="width:14%;border-top:{{weekData[1].topColor}}" ng-click="choseOneDay(weekData[1])">
+                        <!--<div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 8px">{{weekData[1].textT}}</div>-->
+                        <div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 5px;">
+                            <div style="width: 30px;height: 30px;background-color: {{weekData[1].todayC}};border-radius: 15px;padding-top: 3px;margin-left: 20%;color:{{weekData[1].todayT}}">{{weekData[1].textT}}</div>
+                        </div>
+                        <div style="background-color: #5cb85c;width: 8px;height: 8px;border-radius: 4px;margin-left: 40%" ng-show={{weekData[1].showTop}}></div>
+                    </div>
+                    <div style="width:14%;border-top:{{weekData[2].topColor}}" ng-click="choseOneDay(weekData[2])">
+                        <!--<div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 8px">{{weekData[2].textT}}</div>-->
+                        <div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 5px;">
+                            <div style="width: 30px;height: 30px;background-color: {{weekData[2].todayC}};border-radius: 15px;padding-top: 3px;margin-left: 20%;color:{{weekData[2].todayT}}">{{weekData[2].textT}}</div>
+                        </div>
+                        <div style="background-color: #5cb85c;width: 8px;height: 8px;border-radius: 4px;margin-left: 40%" ng-show={{weekData[2].showTop}}></div>
+                    </div>
+                    <div style="width:14%;border-top:{{weekData[3].topColor}}" ng-click="choseOneDay(weekData[3])">
+                        <!--<div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 8px">{{weekData[3].textT}}</div>-->
+                        <div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 5px;">
+                            <div style="width: 30px;height: 30px;background-color: {{weekData[3].todayC}};border-radius: 15px;padding-top: 3px;margin-left: 20%;color:{{weekData[3].todayT}}">{{weekData[3].textT}}</div>
+                        </div>
+                        <div style="background-color: #5cb85c;width: 8px;height: 8px;border-radius: 4px;margin-left: 40%" ng-show={{weekData[3].showTop}}></div>
+                    </div>
+                    <div style="width:14%;border-top:{{weekData[4].topColor}}" ng-click="choseOneDay(weekData[4])">
+                        <!--<div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 8px">{{weekData[4].textT}}</div>-->
+                        <div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 5px;">
+                            <div style="width: 30px;height: 30px;background-color: {{weekData[4].todayC}};border-radius: 15px;padding-top: 3px;margin-left: 20%;color:{{weekData[4].todayT}}">{{weekData[4].textT}}</div>
+                        </div>
+                        <div style="background-color: #5cb85c;width: 8px;height: 8px;border-radius: 4px;margin-left: 40%" ng-show={{weekData[4].showTop}}></div>
+                    </div>
+                    <div style="width:14%;border-top:{{weekData[5].topColor}}" ng-click="choseOneDay(weekData[5])">
+                        <!--<div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 8px">{{weekData[5].textT}}</div>-->
+                        <div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 5px;">
+                            <div style="width: 30px;height: 30px;background-color: {{weekData[5].todayC}};border-radius: 15px;padding-top: 3px;margin-left: 20%;color:{{weekData[5].todayT}}">{{weekData[5].textT}}</div>
+                        </div>
+                        <div style="background-color: #5cb85c;width: 8px;height: 8px;border-radius: 4px;margin-left: 40%" ng-show={{weekData[5].showTop}}></div>
+                    </div>
+                    <div style="width:14%;border-top:{{weekData[6].topColor}}" ng-click="choseOneDay(weekData[6])">
+                        <div style="text-align: center;color: #0f0f0f;font-size: 15px;height: 40px;padding-top: 5px;">
+                            <div style="width: 30px;height: 30px;background-color: {{weekData[6].todayC}};border-radius: 15px;padding-top: 3px;margin-left: 20%;color:{{weekData[6].todayT}}">{{weekData[6].textT}}</div>
+                        </div>
+                        <div style="background-color: #5cb85c;width: 8px;height: 8px;border-radius: 4px;margin-left: 40%" ng-show={{weekData[6].showTop}}></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false" ng-show="!appType">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>
+
+<!--<ion-view view-title="" hide-nav-bar="true" style="background-color: white;z-index: 9999" hide-tabs="true" ng-show="!appType">-->
+    <!--<ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">-->
+        <!--<img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">-->
+        <!--<div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>-->
+    <!--</ion-content>-->
+<!--</ion-view>-->
+
+
+
+

@@ -1,0 +1,23 @@
+angular.module('starter.WaterSuccessCtrl', [])
+
+    .controller('WaterSuccessCtrl', function($scope,$state,service,$rootScope,$timeout,
+                                             $ionicViewSwitcher,$ionicHistory,$ionicNavBarDelegate,$ionicPopup,$ionicActionSheet) {
+        //判断手机端才能使用
+        // $ionicNavBarDelegate.showBar(false);
+        // var ua = navigator.userAgent.toLowerCase();
+        // var btypeInfo = (ua.match( /aliapp/g ) || "other")[ 0 ];
+        // $scope.appType = false;
+        //
+        // if(btypeInfo == "aliapp"){
+        //     $scope.appType = true;
+        // }else{
+        //     $scope.appType = false;
+        // }
+        $scope.appType = true;
+        $scope.screenHeight = screen.height+"px";
+
+        $scope.toHelperWater = function (item) {
+            $ionicViewSwitcher.nextDirection('forward');
+            $state.go('tab.HelperWater',item);
+        }
+    });

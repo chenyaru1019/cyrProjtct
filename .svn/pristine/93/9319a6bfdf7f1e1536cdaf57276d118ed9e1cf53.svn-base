@@ -1,0 +1,111 @@
+<ion-view view-title="" hide-nav-bar="true" style="background-color: #E5E5E4" hide-tabs="true" ng-show="appType">
+    <ion-header-bar class="bar-clear" style="background-color: white;padding: 0px">
+        <div style="width: 100%;background-color: #E5E5E4">
+            <div class="row row-100" style="padding-bottom: 5px;padding-top: 5px;padding-left: 15px;padding-right: 15px;background-color: #E5E5E4">
+                <div class="col-20" style="padding-top: 4px">
+                    <!--<img src="../img/back.png" style="height: 20px">-->
+                </div>
+                <!--<div class="col-20" ng-click="volunteerFeedBackCancel()" style="padding-top: 4px">-->
+                    <!--<img src="../img/back.png" style="height: 20px">-->
+                <!--</div>-->
+                <div  class="col-60" style="text-align: center;font-size: 20px;font-weight: bold;vertical-align: middle;padding-top: 5px;color: black">
+                    服务反馈
+                </div>
+                <div class="col-20"  style="padding-top: 8px;color: black;text-align: right" ng-click="saveFeedback()">
+                    提交
+                </div>
+            </div>
+            <div style="background-color: #6B6B6B;height: 1px;width: 100%">
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-content style="padding-top: 0px;">
+        <div style="padding: 10px">
+            车站情况反馈
+        </div>
+        <div class="row" style="margin-bottom:10px;border-style: solid;border-color: #6B6B6B;border-radius: 10px;border-width: 1px;margin-left:10px;margin-right: 10px;width: auto">
+            <div class="col-90">
+                <select id="sel_conlution" onchange="angular.element(this).scope().choseType(this.value)" style="vertical-align: middle;text-align: center">
+                </select>
+            </div>
+            <div class="col-10" style="text-align: center">
+                <img src="../../img/btn_arrowd.png">
+            </div>
+        </div>
+        <div style="background-color: #6B6B6B;height: 1px;width: auto;margin-left: 10px;margin-right: 10px">
+        </div>
+
+        <div style="padding: 10px">
+            综合评价
+        </div>
+        <div class="row row-100">
+            <div class="col col-10" ng-repeat="item in stars" >
+                <img src="{{item.img}}" style="height: 30px" ng-click="starClick(item)">
+            </div>
+        </div>
+        <div style="background-color: #6B6B6B;height: 1px;width: auto;margin-left: 10px;margin-right: 10px">
+        </div>
+
+        <div style="padding: 10px">
+            照片反馈（限3张）
+        </div>
+        <!--<div style="width:120px;overflow:hidden;position:relative;">-->
+            <!--<input type="file" style="position:absolute;left:0;top:0;z-index:2;opacity:0;">-->
+            <!--<span class="camera" style="display:block;width:60px;line-height:28px;float:left;">拍照</span>-->
+            <!--<span class="picture" style="display:block;width:60px;line-height:28px;float:left; ">图片</span>-->
+        <!--</div>-->
+        <div class="row">
+            <div class="row" style="width:80px;" ng-show="ImgShow[0];">
+                <img src="../img/btn_delete_image.png" style="width: 15px;height: 15px" ng-click="deteleImg(0)" ng-if="isDelete[0]">
+                <div style="width: 60px;overflow:hidden;position:relative;">
+                    <input type="file" accept="image/*" style="position:absolute;left:0;top:0;z-index:2;opacity:0;"
+                           onchange="angular.element(this).scope().setBase64_1(this.files)" >
+                    <img src="{{feedImg[0]}}" style="width: 60px;height: 60px">
+                </div>
+            </div>
+            <div class="row" style="width:80px;margin-top: 5px" ng-show="ImgShow[1];">
+                <img src="../img/btn_delete_image.png" style="width: 15px;height: 15px" ng-click="deteleImg(1)" ng-if="isDelete[1]">
+                <div style="width: 60px;overflow:hidden;position:relative;">
+                    <input type="file" accept="image/*" style="position:absolute;left:0;top:0;z-index:2;opacity:0;"
+                           onchange="angular.element(this).scope().setBase64_2(this.files)">
+                    <img src="{{feedImg[1]}}" style="width: 60px;height: 60px">
+                </div>
+            </div>
+            <div class="row" style="width:80px;margin-top: 5px" ng-show="ImgShow[2];">
+                <img src="../img/btn_delete_image.png" style="width: 15px;height: 15px" ng-click="deteleImg(2)" ng-if="isDelete[2]">
+                <div style="width: 60px;overflow:hidden;position:relative;">
+                    <input type="file" accept="image/*" style="position:absolute;left:0;top:0;z-index:2;opacity:0;"
+                           onchange="angular.element(this).scope().setBase64_3(this.files)">
+                    <img src="{{feedImg[2]}}" style="width: 60px;height: 60px">
+                </div>
+            </div>
+            <div class="row" style="width:80px;margin-top: 5px" ng-show="ImgShow[3];">
+                <div style="width: 60px;overflow:hidden;position:relative;" ng-click="setBase64_4()">
+                    <img src="{{feedImg[3]}}" style="width: 60px;height: 60px">
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #6B6B6B;height: 1px;width: auto;margin-left: 10px;margin-right: 10px">
+        </div>
+
+        <div style="padding: 10px">
+            意见建议
+        </div>
+        <div style="border-width: 1px;border-style: solid;border-color: #6B6B6B;border-radius: 10px;
+                height: 200px;padding-left: 10px;padding-right: 10px;margin-left: 10px;margin-right: 10px">
+            <textarea type="text" style="height: 100%;width: 100%;background-color: transparent"></textarea>
+        </div>
+
+    </ion-content>
+</ion-view>
+
+<ion-view view-title="" hide-nav-bar="true" style="background-color: white;z-index: 9999" hide-tabs="true" ng-show="!appType">
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>
+
+
+
+

@@ -1,0 +1,89 @@
+<ion-view view-title="" hide-nav-bar="true" style="background-color: #E5E5E4" hide-tabs="true" ng-show="appType">
+    <!--<ion-header-bar class="bar-clear" style="background-color: white;padding: 0px">-->
+        <!--<div style="width: 100%;background-color: #E5E5E4">-->
+            <!--<div class="row" style="padding-bottom: 5px;padding-top: 5px;padding-left: 15px;padding-right: 15px;background-color: #E5E5E4">-->
+                <!--<div class="col-10"  style="padding-top: 4px">-->
+                    <!--&lt;!&ndash;<img src="../img/back.png" style="height: 20px">&ndash;&gt;-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="col-10" ng-click="pastyMenuCancel()" style="padding-top: 4px">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<img src="../img/back.png" style="height: 20px">&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--<div  class="col-80" style="text-align: center;font-size: 20px;font-weight: bold;vertical-align: middle;padding-top: 5px;color: black">-->
+                    <!--&lt;!&ndash;菜单&ndash;&gt;-->
+                <!--</div>-->
+                <!--<div class="col-10" style="margin-top: 4px;text-align: right;background-image: url('../img/ic_cart.png');background-size: 25px;background-repeat: no-repeat;text-align: right" ng-click="showConfirm()">-->
+                    <!--<div ng-if="isNull" style="position:fixed;right:10px;top: 4px;text-align:center;width: 18px;height: 18px;padding-top: 1.5px;border-radius: 50%;border-color: transparent;border-style: solid;background-color: red;line-height: 15px;vertical-align: middle">-->
+                        <!--{{num}}-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div style="background-color: #6B6B6B;height: 1px;width: 100%" >-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</ion-header-bar>-->
+
+    <ion-content style="padding-top: 0px" >
+
+        <div>
+            <ion-list list-inset ng-repeat="item in listData | orderBy: 'shouzimu'">
+                <div class="row" style="padding-top: 10px;" >
+                    <div class="col-25" style="text-align: center">
+                        <img src="{{item.picUrl}}" style="width: 90%">
+                    </div>
+                    <div class="col-25" style="text-align: center;padding-top: 5px">
+                        <div style="font-size: 18px;font-weight: bold;padding-bottom: 5px">
+                            {{item.name}}
+                        </div>
+                        <div style="color: grey;font-size:16px ;padding-top: 5px">
+                            {{item.price}}元
+                        </div>
+                    </div>
+                    <div class="col-25" style="text-align: center;padding-top: 20px;color: grey">
+                        剩余：{{item.rest}}
+                    </div>
+                    <div class="col-25" style="text-align: center;padding-top: 15px">
+                        <div class="row">
+                            <div class="col-33">
+                                <!--../../img/btn_minus_enable.png-->
+                                <div style="width: 24px;height: 24px;background-color: #F1F0F0" ng-click="minNum(item)">-</div>
+                            </div>
+                            <div class="col-33" style="">
+                                <div style="width: 24px;height: 24px;background-color: #F1F0F0">{{item.num}}</div>
+                            </div>
+                            <div class="col-33">
+                                <!--<img src="../../img/btn_plus_enable.png" ng-click="addNum(item)">-->
+                                <div style="width: 24px;height: 24px;background-color: #E0E0E0" ng-click="addNum(item)">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-left: 10px;background-color: #a2a2a2;height: 1px;width: 100%;filter:alpha(opacity:50); opacity:0.5;">
+                </div>
+            </ion-list>
+        </div>
+
+    </ion-content>
+
+    <div class="bar bar-footer bar-clear" style="text-align: center">
+        <!--<div style="margin-top: 4px;text-align: right;background-image: url('../img/ic_cart.png');background-size: 25px;background-repeat: no-repeat;text-align: right" ng-click="showConfirm()">-->
+        <!--</div>-->
+        <div ng-if="isNull" style="height: 30px;width: 40%;
+        text-align: center;background-color: #62C7FD;
+        line-height: 30px;-webkit-border-radius: 15px;-moz-border-radius: 15px;
+        border-radius: 15px;margin-left: 30%" ng-click="showConfirm()">
+            购物车({{num}})
+        </div>
+    </div>
+
+</ion-view>
+
+<ion-view view-title="" hide-nav-bar="true" style="background-color: white;z-index: 9999" hide-tabs="true" ng-show="!appType">
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>
+
+
+
+

@@ -1,0 +1,204 @@
+<ion-view view-title="" hide-nav-bar="true"  hide-tabs="true" >
+
+    <ion-header-bar class="bar-clear" style="background-color: white;padding: 0px;margin: 0px" ng-show="appType">
+        <div class="col" style="width: 100%;height: auto;padding: 0px;background-color: white">
+            <div style="background-color: #979797;height: 1pt;width: 100%;"></div>
+            <div class="row" style="width: 100%;background-color: white;box-shadow: 0px 5px 6px 0px #00000019 ;height: 40px;padding: 0px">
+                <div class="col" style="width:50%;height: 100%;padding: 0px" ng-click="changeHelperWater(0)">
+                    <div style="width: 100%;text-align: center;height: 39px;padding-top: 12px;color: {{helperWater_color}}">
+                        订购
+                    </div>
+                    <div style="width: 100%;height: 2px;background-color: #4A90E2;" ng-if="helperWater"></div>
+                </div>
+                <div class="col" style="width:50%;height: 100%;padding: 0px" ng-click="changeHelperWater(1)">
+                    <div style="width: 100%;text-align: center;height: 39px;padding-top: 12px;color: {{waterHistory_color}}">
+                        历史订单
+                    </div>
+                    <div style="width: 100%;height: 2px;background-color: #4A90E2;" ng-if="!helperWater"></div>
+                </div>
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-content style="padding-top: 0px;background-color: #F1F1F1;" overflow-scroll="false;" ng-show="appType">
+
+        <div class="col" style="height:{{screenHeight}};padding: 0px" >
+            <div style="width: 100%;height: 100%" ng-if="helperWater">
+                <div class="row" style="width:auto;margin-left: 10px;margin-right: 10px;background-color: white;height: 118px;box-shadow: 0px 2px 4px 0px #0000007F;
+                        border:1px solid transparent; border-radius: 4px;margin-top: 12px;">
+                    <div style="width: 20%;margin-left: auto;margin-right: auto;text-align: center">
+                        <img style="height: 94px;margin-top: 12px;margin-bottom: 12px;margin-left: 10px" src="../img/water1.png">
+                    </div>
+                    <div class="col" style="width: 50%;margin-top: auto;margin-bottom: auto;vertical-align: middle">
+                        <div style="font-size: 14px;">340毫升瓶装水(箱装)
+                        </div>
+                        <div style="font-size: 10px;color: #9B9B9B">24瓶一箱
+                        </div>
+                    </div>
+                    <div class="row" style="width: 30%;font-size: 15px;color: #4A4A4A">
+                        <div style="background-color: #F1F0F0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px;color: #9B9B9B"
+                            ng-click="minus(1)" ng-if="waterNum1==0">
+                            -
+                        </div>
+
+                        <div style="background-color: #E0E0E0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px;color: #4A4A4A"
+                             ng-click="minus(1)" ng-if="waterNum1!=0">
+                            -
+                        </div>
+
+                        <div style="background-color: #E0E0E0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-left:3px;margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px" ng-model="$parent.waterNum1">
+                            {{waterNum1}}
+                        </div>
+                        <div style="background-color: #E0E0E0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-left:3px;margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px" ng-click="add(1)">
+                            +
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" style="width:auto;margin-left: 10px;margin-right: 10px;background-color: white;height: 118px;box-shadow: 0px 2px 4px 0px #0000007F;
+                        border:1px solid transparent; border-radius: 4px;margin-top: 15px">
+                    <div style="width: 20%;margin-left: auto;margin-right: auto;text-align: center">
+                        <img style="height: 94px;margin-top: 12px;margin-bottom: 12px;margin-left: 10px" src="../img/water2.png">
+                    </div>
+                    <div class="col" style="width: 50%;margin-top: auto;margin-bottom: auto;vertical-align: middle">
+                        <div style="font-size: 14px;">4升桶装水
+                        </div>
+                    </div>
+                    <div class="row" style="width: 30%;font-size: 15px;color: #4A4A4A">
+                        <div style="background-color: #F1F0F0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                             margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px;color: #9B9B9B"
+                             ng-click="minus(2)" ng-if="waterNum2==0">
+                            -
+                        </div>
+
+                        <div style="background-color: #E0E0E0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px;color: #4A4A4A"
+                             ng-click="minus(2)" ng-if="waterNum2!=0">
+                            -
+                        </div>
+
+                        <div style="background-color: #E0E0E0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-left:3px;margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px" ng-model="$parent.waterNum2">
+                            {{waterNum2}}
+                        </div>
+                        <div style="background-color: #E0E0E0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-left:3px;margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px" ng-click="add(2)">
+                            +
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" style="width:auto;margin-left: 10px;margin-right: 10px;background-color: white;height: 118px;box-shadow: 0px 2px 4px 0px #0000007F;
+                        border:1px solid transparent; border-radius: 4px;margin-top: 15px">
+                    <div style="width: 20%;margin-left: auto;margin-right: auto;text-align: center">
+                        <img style="height: 94px;margin-top: 12px;margin-bottom: 12px;margin-left: 10px" src="../img/water3.png">
+                    </div>
+                    <div class="col" style="width: 50%;margin-top: auto;margin-bottom: auto;vertical-align: middle">
+                        <div style="font-size: 14px;">19升桶装水
+                        </div>
+                    </div>
+                    <div class="row" style="width: 30%;font-size: 15px;color: #4A4A4A">
+                        <div style="background-color: #F1F0F0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                             margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px;color: #9B9B9B"
+                             ng-click="minus(3)" ng-if="waterNum3==0">
+                            -
+                        </div>
+
+                        <div style="background-color: #E0E0E0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px;color: #4A4A4A"
+                             ng-click="minus(3)" ng-if="waterNum3!=0">
+                            -
+                        </div>
+                        <div style="background-color: #E0E0E0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-left:3px;margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px" ng-model="$parent.waterNum3">
+                            {{waterNum3}}
+                        </div>
+                        <div style="background-color: #E0E0E0;border:1px solid transparent;border-radius: 2px;height: 22px;width: 25px;text-align: center;
+                            margin-left:3px;margin-top: auto;margin-bottom: auto;vertical-align: middle;padding-top: 1px" ng-click="add(3)">
+                            +
+                        </div>
+                    </div>
+                </div>
+
+                <div style="position: fixed;bottom: 0px;width: 100%;margin-bottom: 70px" ng-click="toWaterInput()">
+                    <div style="margin-left: 15px;margin-right: 15px;height: 38px;background-color: #3396FB;font-size: 15px;color: white;text-align: center;
+                        border:1px solid transparent;border-radius: 4pt;padding-top: 7px;">
+                        提交({{waterNum}})
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 100%;height: 100%;padding: 0px;margin-top: -15px" ng-if="!helperWater">
+                <ion-refresher pulling-text="下拉刷新" on-pulling="doRefresh()"></ion-refresher>
+                <ion-list ng-repeat="item in listData" >
+                    <div style="background-color: #979797;height: 1pt;width: 100%;margin-top: 15px"></div>
+                    <div class="col" style="background-color: white;">
+                        <div style="margin-top: 10px;margin-left: 10px;font-size: 12px;color: #4A4A4A">
+                            {{item.createAt}}
+                        </div>
+                        <div class="row" style="width:auto;" ng-if="item.codeForWater1 !=0 ">
+                            <div style="width: 20%;margin-left: auto;margin-right: auto;text-align: center">
+                                <img style="height: 50px;margin-top: 10px;margin-bottom: 10px;margin-left: 10px" src="../img/water1.png">
+                            </div>
+                            <div class="col" style="width: 50%;margin-top: auto;margin-bottom: auto;vertical-align: middle">
+                                <div style="font-size: 14px;">340毫升瓶装水(箱装)
+                                </div>
+                                <div style="font-size: 10px;color: #9B9B9B">24瓶一箱
+                                </div>
+                            </div>
+                            <div style="width: 30%;font-size: 16px;margin-top: auto;margin-bottom: auto;vertical-align: middle;text-align: right;margin-right: 20px">
+                                数量 {{item.codeForWater1}}
+                            </div>
+                        </div>
+
+                        <div style="background-color: #979797;height: 1px;width: auto;margin-left: 15px;margin-right: 15px" ng-if="item.codeForWater2 !=0 &&item.codeForWater1 !=0 "></div>
+                        <div class="row" style="width:auto;" ng-if="item.codeForWater2 !=0 ">
+                            <div style="width: 20%;margin-left: auto;margin-right: auto;text-align: center">
+                                <img style="height: 50px;margin-top: 10px;margin-bottom: 10px;margin-left: 10px" src="../img/water2.png">
+                            </div>
+                            <div class="col" style="width: 50%;margin-top: auto;margin-bottom: auto;vertical-align: middle">
+                                <div style="font-size: 14px;">4升桶装水
+                                </div>
+                            </div>
+                            <div style="width: 30%;font-size: 16px;margin-top: auto;margin-bottom: auto;vertical-align: middle;text-align: right;margin-right: 20px">
+                                数量 {{item.codeForWater2}}
+                            </div>
+                        </div>
+                        <div style="background-color: #979797;height: 1px;width: auto;margin-left: 15px;margin-right: 15px" ng-if="item.codeForWater3 !=0 && item.codeForWater2 !=0 "></div>
+
+                        <div class="row" style="width:auto;" ng-if="item.codeForWater3 !=0 ">
+                            <div style="width: 20%;margin-left: auto;margin-right: auto;text-align: center">
+                                <img style="height: 50px;margin-top: 10px;margin-bottom: 10px;margin-left: 10px" src="../img/water3.png">
+                            </div>
+                            <div class="col" style="width: 50%;margin-top: auto;margin-bottom: auto;vertical-align: middle;">
+                                <div style="font-size: 14px;">19升桶装水
+                                </div>
+                            </div>
+                            <div style="width: 30%;font-size: 16px;margin-top: auto;margin-bottom: auto;vertical-align: middle;text-align: right;margin-right: 20px">
+                                数量 {{item.codeForWater3}}
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #979797;height: 1pt;width: auto;margin-left: 5px;margin-right: 5px"></div>
+                    <div style="width: 100%;background-color: white;padding-top: 15px;padding-bottom: 15px;text-align: right">
+                    <span style="width: auto;border-radius: 4px;border: 1px solid #3396FB;color: #3396FB;padding-left: 15px;padding-right: 15px;
+                        padding-top: 4px;padding-bottom: 4px;margin-right: 15px;font-size: 14px" ng-click="toWaterInput1(item)">
+                        再次提交
+                    </span>
+                    </div>
+                    <div style="background-color: #979797;height: 1pt;width: 100%;"></div>
+                </ion-list>
+                <ion-infinite-scroll on-infinite="loadMore()" distance="10%" immediate-check="false" ng-if="domore"></ion-infinite-scroll>
+            </div>
+        </div>
+    </ion-content>
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false" ng-show="!appType">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>

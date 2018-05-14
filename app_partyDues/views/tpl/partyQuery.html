@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>party_query</title>
+</head>
+<body >
+<div class="container-fluid" ng-show="appType">
+    <div class="row" style="background-color:#E5E5E4; padding-bottom: 10px;padding-top: 5px;padding-right: 10px;padding-left: 10px">
+        <!--<div class="col-xs-4" ng-click="cancel2()" style="line-height: 30px">-->
+            <!--<img src="../../img/back.png" style="vertical-align: middle;height: 20px" >-->
+        <!--</div>-->
+        <div class="col-xs-4" style="line-height: 30px">
+            <!--<img src="../../img/back.png" style="vertical-align: middle;height: 20px" >-->
+        </div>
+        <div class="col-xs-4" style="text-align: center;font-size: 20px;font-weight: bold;vertical-align: middle">
+            党费
+        </div>
+        <div class="col-xs-4" style="line-height: 30px;text-align: right">
+            <!--<img src="../../img/calendar.png" style="width: 20px;height: 20px;margin-left: 10px">-->
+
+            <!--<div class="btn-group" style="float:right;">-->
+                <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">-->
+                    <!--月份-->
+                    <!--<span class="caret"></span>-->
+                <!--</button>-->
+                <!--<ul class="dropdown-menu pull-right" role="menu" ng-repeat="dataM in monthData" style="width: 20px">-->
+                    <!--<li style="width: 20px" ng-click="calendarAction()">{{dataM}}</li>-->
+                    <!--&lt;!&ndash;<li style="width: 20px" ng-click="calendarAction()">{{dataM}}</li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<li style="width: 20px">{{dataM}}</li>&ndash;&gt;-->
+                <!--</ul>-->
+            <!--</div>-->
+
+            <!--<div class="dropdown" style="float:right;">-->
+                <!--<button class="dropbtn">右</button>-->
+                <!--<div class="dropdown-content" ng-repeat="dataM in monthData">-->
+                    <!--&lt;!&ndash;<a href="#">{{dataM}}</a>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a href="#">{{dataM}}</a>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a href="#">{{dataM}}</a>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <select id="sel" onchange="angular.element(this).scope().choseYear(this.value)" style="vertical-align: middle">
+            </select>
+
+        </div>
+    </div>
+    <div class="row" style="background-color: #eeeeee;height: 40px;">
+        <div class="col-xs-3" style="height: 20px;margin-top: 10px">
+            党费
+        </div>
+        <div class="col-xs-9" style="text-align: right;height: 20px;margin-top: 10px">
+            <p style="color: #dd222d" id="myText">*你有共计{{noPayParty}}元党费未缴纳</p>
+        </div>
+    </div>
+    <div style="width: 100%;height: 40px;">
+        <div class="col-xs-3" style="margin-top: 12px;text-align: center">月份</div>
+        <div class="col-xs-6" style="margin-top: 12px;text-align: center">金额</div>
+        <div class="col-xs-3" style="margin-top: 12px;text-align: center"></div>
+    </div>
+
+    <div ng-repeat="dataNum in dataArray" style="height: 40px">
+        <div class="col-xs-3" style="margin-top: 12px;text-align: center">{{dataNum.time}}</div>
+        <div class="col-xs-6" style="margin-top: 12px;text-align: center">{{dataNum.num}}元</div>
+        <div class="col-xs-3" style="margin-top:1px;text-align: center" ng-click="giveMoney(dataNum)">
+            <div style="background-color:{{dataNum.color}};border-radius: 5px;height:30px;margin-top: 5px">
+            <p style="color: white;padding-top: 5px">{{dataNum.text}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div ng-show="!appType">
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</div>
+<div class="wrap-dialog hide">
+    <div class="dialog">
+        <div class="dialog-header">
+            <span class="dialog-title">{{showTitle}}</span>
+        </div>
+        <div class="dialog-body">
+            <span class="dialog-message">{{showMessage}}</span>
+        </div>
+        <div class="dialog-footer">
+            <input type="button" class="btn" id="confirm" value="确认" />
+            <!--<input type="button" class="btn ml50" id="cancel" value="取消" />-->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

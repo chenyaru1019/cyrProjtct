@@ -1,0 +1,82 @@
+<ion-view view-title="" hide-nav-bar="true"  hide-tabs="true" ng-show="appType">
+    <ion-header-bar class="bar-clear" style="background-color: white;padding: 0px;margin: 0px">
+        <div style="width: 100%;background-color: #E5E5E4">
+            <div class="row" style="padding-top: 5px;padding-left: 15px;padding-right: 15px;">
+                <div class="col-20"  style="padding-top: 4px">
+                    <!--<img src="../img/back.png" style="height: 20px">-->
+                </div>
+                <!--<div class="col-20" ng-click="volunteerRankCancel()" style="padding-top: 4px">-->
+                    <!--<img src="../img/back.png" style="height: 20px">-->
+                <!--</div>-->
+                <div  class="col-60" style="text-align: center;font-size: 20px;font-weight: bold;vertical-align: middle;padding-top: 5px;color: black">
+                    {{title}}
+                </div>
+                <div class="col-20" style="color: #68a948;padding-top: 8px;text-align: right" ng-click="changeType()">
+                    {{right}}
+                </div>
+            </div>
+            <div style="background-color: #6B6B6B;height: 1px;width: 100%;padding: 0px;margin: 0px">
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-content style="padding-top: 0px" >
+        <div class="col-100" ng-show="isShowPerson" style="background-image: url('../../img/bg_volunteer_rank.png');background-size:cover;background-repeat:no-repeat;height:100px;">
+            <div class="col-20">
+            </div>
+            <div class="col-50" style="height: 100px;text-align: center">
+
+                <div class="row-100" style="padding-top: 20px;padding-left: 10px;text-align: center">
+                    <label style="font-size: 18px;color: #F71B1B">
+                        第
+                    </label>
+                    <label style="font-size: 24px;font-weight: bold;color: #F71B1B">
+                        {{rank}}
+                    </label>
+                    <label style="font-size: 18px;color: #F71B1B">
+                        名
+                    </label>
+                </div>
+                <div style="font-size: 17px;color: #F71B1B">
+                    个人排行
+                </div>
+
+            </div>
+            <div class="col-50">
+            </div>
+        </div>
+        <div ng-repeat="item in list" style="padding-right: 20px">
+            <div class="row" style="padding-left: 20px;padding-top: 5px;padding-right: 5px">
+                <div class="col-5">
+                    <div style="width:30px;height:30px;line-height:30px;border-radius:50px;border:solid white 1px;text-align: center;vertical-align: middle;
+                    background-color:{{item.color}};" ng-if="item.rank != 1">
+                        {{item.rank}}
+                    </div>
+                    <div style="width:30px;height:30px" ng-if="item.rank == 1">
+                        <img src="../img/ic1.png" style="height: 30px">
+                    </div>
+                </div>
+                <div class="col-45" style="padding-top: 7px;padding-left: 10px">
+                    {{item.name}}
+                </div>
+                <div class="col-5">
+                </div>
+                <div class="col-45" style="position:fixed;text-align: right;padding-top: 7px;right: 15px">
+                    <label ng-if="!isShowPerson">完成度:{{item.time | number : 2}}%</label>
+                    <label ng-if="isShowPerson">{{item.hourMin}}</label>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
+
+<ion-view view-title="" hide-nav-bar="true" style="background-color: white;z-index: 9999" hide-tabs="true" ng-show="!appType">
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>
+
+
+
+

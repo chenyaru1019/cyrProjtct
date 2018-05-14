@@ -1,0 +1,87 @@
+<ion-view view-title="" hide-nav-bar="true"  hide-tabs="true" >
+    <ion-content style="padding-top: 0px;background-color: #F1F1F1" overflow-scroll="false;" ng-show="appType">
+        <div style="background-color: #979797;height: 1pt;width: 100%;"></div>
+        <div style="height:{{screenHeight}}">
+        <div class="col" style="background-color: white">
+            <div class="row" style="width:auto;" ng-if="codeForWater1 !=0 ">
+                <div style="width: 20%;margin-left: auto;margin-right: auto;text-align: center">
+                    <img style="height: 50px;margin-top: 10px;margin-bottom: 10px;margin-left: 10px" src="../img/water1.png">
+                </div>
+                <div class="col" style="width: 50%;margin-top: auto;margin-bottom: auto;vertical-align: middle">
+                    <div style="font-size: 14px;">340毫升瓶装水(箱装)
+                    </div>
+                    <div style="font-size: 10px;color: #9B9B9B">24瓶一箱
+                    </div>
+                </div>
+                <div style="width: 30%;font-size: 16px;margin-top: auto;margin-bottom: auto;vertical-align: middle;text-align: right;margin-right: 20px">
+                    数量 {{codeForWater1}}
+                </div>
+            </div>
+
+            <div style="background-color: #979797;height: 1px;width: auto;margin-left: 15px;margin-right: 15px" ng-if="codeForWater2 !=0 &&codeForWater1 !=0 "></div>
+            <div class="row" style="width:auto;" ng-if="codeForWater2 !=0 ">
+                <div style="width: 20%;margin-left: auto;margin-right: auto;text-align: center">
+                    <img style="height: 50px;margin-top: 10px;margin-bottom: 10px;margin-left: 10px" src="../img/water2.png">
+                </div>
+                <div class="col" style="width: 50%;margin-top: auto;margin-bottom: auto;vertical-align: middle">
+                    <div style="font-size: 14px;">4升桶装水
+                    </div>
+                </div>
+                <div style="width: 30%;font-size: 16px;margin-top: auto;margin-bottom: auto;vertical-align: middle;text-align: right;margin-right: 20px">
+                    数量 {{codeForWater2}}
+                </div>
+            </div>
+            <div style="background-color: #979797;height: 1px;width: auto;margin-left: 15px;margin-right: 15px" ng-if="codeForWater3 !=0 && codeForWater2 !=0 "></div>
+
+            <div class="row" style="width:auto;" ng-if="codeForWater3 !=0 ">
+                <div style="width: 20%;margin-left: auto;margin-right: auto;text-align: center">
+                    <img style="height: 50px;margin-top: 10px;margin-bottom: 10px;margin-left: 10px" src="../img/water3.png">
+                </div>
+                <div class="col" style="width: 50%;margin-top: auto;margin-bottom: auto;vertical-align: middle;">
+                    <div style="font-size: 14px;">19升桶装水
+                    </div>
+                </div>
+                <div style="width: 30%;font-size: 16px;margin-top: auto;margin-bottom: auto;vertical-align: middle;text-align: right;margin-right: 20px">
+                    数量 {{codeForWater3}}
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #979797;height: 1pt;width: 100%;"></div>
+
+        <div style="width: auto;margin-top: 25px;background-color: white;padding-left: 10px;padding-right: 10px">
+            <div style="background-color: #979797;height: 1px;width: auto;margin-left: -15px;margin-right: -15px"></div>
+            <div class="row" style="font-size: 13px">
+                <label style="width: 30%;margin-top: 7px">配送房间</label>
+                <input style="width: 70%;text-align: right;color: black" type="text" placeholder="请填写房间(必填)" ng-model="$parent.address">
+            </div>
+            <div style="background-color: #979797;height: 1px;"></div>
+            <div class="row" style="font-size: 13px">
+                <label style="width: 30%;margin-top: 7px">订水人</label>
+                <input style="width: 70%;text-align: right;color: #888888" type="text" placeholder="请填写订水人(必填)" ng-model="$parent.name" >
+            </div>
+            <div style="background-color: #979797;height: 1px;"></div>
+            <div class="row" style="font-size: 13px">
+                <label style="width: 30%;margin-top: 7px">订水人座机</label>
+                <input style="width: 70%;text-align: right;color: #888888" type="tel" placeholder="请填写座机" ng-model="$parent.telephone">
+            </div>
+            <div style="background-color: #979797;height: 1px;"></div>
+            <div class="row" style="font-size: 13px">
+                <label style="width: 30%;margin-top: 7px">订水人手机号</label>
+                <input style="width: 70%;text-align: right;color: #888888" type="tel" placeholder="请填写手机号" onk oninput="if(value.length>11) value=value.slice(0,11)" ng-model="$parent.cellphone">
+            </div>
+        </div>
+        <div style="background-color: #979797;height: 1px;width: auto"></div>
+
+        <div style="position: fixed;bottom: 0px;width: 100%;margin-bottom: 30px" ng-click="toWaterSuccess()">
+            <div style="margin-left: 15px;margin-right: 15px;height: 38px;background-color: #3396FB;font-size: 15px;color: white;text-align: center;
+                    border:1px solid transparent;border-radius: 4pt;padding-top: 7px;">
+                确认提交
+            </div>
+        </div>
+        </div>
+    </ion-content>
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false" ng-show="!appType">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>

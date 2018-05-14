@@ -1,0 +1,177 @@
+/* Empty. Add your own CSS if you like */
+
+.tab-item i.icon {
+  margin-top: 1px;
+}
+
+.bar-0 {
+  width: auto;
+  height: auto;
+  display: block;
+  max-width:100%;
+  max-height:100%;
+}
+
+
+.bar-1 {
+  width: auto;
+  height: auto;
+  display: block;
+  max-width:100%;
+  max-height:100%;
+}
+
+.bar-img0{
+  background: url(../img/tab/tab_1b.png) no-repeat center top;
+}
+
+.bar-img1{
+  background: url(../img/tab/tab_1a.png) no-repeat center top;
+}
+
+.bar-img2{
+  background: url(../img/tab/tab_2b.png) no-repeat center top;
+}
+
+.bar-img3{
+  background: url(../img/tab/tab_2a.png) no-repeat center top;
+}
+
+.bar-img4{
+  background: url(../img/tab/tab_3b.png) no-repeat center top;
+}
+
+.bar-img5{
+  background: url(../img/tab/tab_3a.png) no-repeat center top;
+}
+
+.bar-img6{
+  background: url(../img/tab/tab_4b.png) no-repeat center top;
+}
+
+.bar-img7{
+  background: url(../img/tab/tab_4a.png) no-repeat center top;
+}
+
+.cardname{
+  width: 100%;
+  height: 170px;
+  position:relative;
+}
+
+.cardname img{
+  width: 100%;
+  height: 100%;
+}
+
+.image-loader-container{
+  position:absolute;
+  left: 43%;
+  top: 43%;
+}
+
+.col-img{
+  width:20px;
+  height:20px;
+  border:0px solid black;
+}
+
+.col-img img{
+  width:100%;height:100%;
+}
+
+.focusingFont{
+  font-size: 18px;
+  font-family:'song-heavy';
+  /*font-weight:bold;*/
+  color:black;
+}
+
+.focusingImg{
+  margin-left: 0px;
+  margin-right: 0px;
+  height:auto;
+  border:0px solid white;
+}
+.focusingImg img{width:100%;height:100%;}
+.backImg{
+  margin-left: 0px;
+  margin-right: 0px;
+  height:auto;
+  width: 12px;
+}
+@font-face {
+  font-family: "song-heavy";
+  src: url("../fonts/song-heavy.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "song-regular";
+  src: url("../fonts/song-regular.ttf") format("opentype");
+}
+
+.myButtonS:active{
+  box-shadow: inset 0 5px 10px #707070,inset 0 -5px 10px #707070;
+}
+
+.scroll-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  /* 提示: 请在此处加上需要设置的大小(dimensions)或位置(positioning)信息! */
+}
+.scroll-wrapper iframe {
+  /* 你自己指定的样式 */
+}
+.title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*//设置字体位置*/
+.textLocation{
+  text-align: center;
+  color: #111111;
+}
+
+/*//柱状图的CSS*/
+.bar rect {
+  fill: steelblue;
+}
+
+.bar text {
+  fill: #111;
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  stroke: #000;
+  fill: none;
+}
+
+
+.filebox{width:120px;overflow:hidden;position:relative;}/*让部分file不显示*/
+.filebox input:file{position:absolute;left:0;top:0;z-index:2;opacity:0;}/*透明，绝对定位*/
+.filebox span{display:block;width:60px;line-height:28px;float:left;}/*模拟按钮*/
+
+/*重定义ionic css样式*/
+#searchBox .item-radio .item-content {
+  padding: 5px 40px;
+  font-size: 12px;
+}
+#searchBox .item-radio {
+  border: 0px;
+}
+#searchBox .item-radio input:checked + .radio-content .item-content {
+  background: white;
+  color: #3396FB;
+}
+#searchBox .item-radio input:checked + .radio-content .radio-icon {
+  right: auto;
+  font-size: 12px;
+  padding: 5px 20px;
+  color: #3396FB;
+}

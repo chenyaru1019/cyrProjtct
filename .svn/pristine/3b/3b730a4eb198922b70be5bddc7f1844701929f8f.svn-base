@@ -1,0 +1,107 @@
+
+<ion-view view-title="" hide-nav-bar="true" style="background-color: #EEEEEE" hide-tabs="true" ng-show="appType">
+    <!--<ion-header-bar class="bar-clear" style="background-color: white;padding: 0px">-->
+        <!--<div style="width: 100%;background-color: #E5E5E4">-->
+            <!--<div class="row" style="padding-bottom: 5px;padding-top: 5px;padding-left: 15px;padding-right: 15px;background-color: #E5E5E4">-->
+                <!--<div class="col-10"  style="padding-top: 4px">-->
+                    <!--&lt;!&ndash;<img src="../img/back.png" style="height: 20px">&ndash;&gt;-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="col-10" ng-click="pastyCancel()" style="padding-top: 4px">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<img src="../img/back.png" style="height: 20px">&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--<div class="col-80" style="height: 45px;background-color: #E5E5E4;width: 100%;text-align: center">-->
+                    <!--<div style="color: black; height:30px;padding-bottom: 5px;padding-top: 5px;text-align: center;font-size: 20px;font-weight: bold;vertical-align: middle">-->
+                        <!--点餐预定-->
+                    <!--</div>-->
+                    <!--<div style="background-color: #E5E5E4;text-align: center;font-size: 10px;color: black">-->
+                        <!--(点心只接受集团本部员工预定)-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div  class="col-80" style="text-align: center;font-size: 20px;font-weight: bold;vertical-align: middle;padding-top: 5px;color: black">&ndash;&gt;-->
+                    <!--&lt;!&ndash;点餐预定&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+            <!--&lt;!&ndash;<div style="background-color: #6B6B6B;height: 1px;width: 100%">&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</ion-header-bar>-->
+    <ion-content style="padding-top: 0px" >
+        <div style="width: 100%;height: 33px;background-color: #3396FB;line-height: 33px">
+            <label style="font-weight:bold;font-size: 12px;color: #FFFFFF;line-height: 33px;margin-left: 14pt">当前食堂</label>
+            <label style="font-size: 12px;color: #FFFFFF;line-height: 33px;margin-left: 14pt">{{selectValueSt}}</label>
+            <button class="button button-clear button-positive button-small" ng-click="selectM();"
+                    style="margin-right: 10px;float: right;text-align: center;font-size: 12px;
+                    color: #FFFFFF;line-height: 33px;">更换</button>
+        </div>
+
+        <div ng-click="toPastyMy()" style="margin-left: 10px;margin-right: 10px;margin-top: 13px;height: 118px;
+        background-color: #FFFFFF;-webkit-border-radius: 4px;-moz-border-radius: 4px;
+        border-radius: 4px;box-shadow: 1px 1px 1px 1px lightgrey;">
+            <div style="display: table;height: 100%;" >
+                <img src="../img/ic_mine.png" style="margin-top: 26px;margin-left: 26px;width: 59px;height: 66px;">
+                <span style="padding-left: 20px;display: table-cell;vertical-align: middle">我的预定</span>
+            </div>
+        </div>
+
+
+        <div ng-click="toPastyMenu(0)" style="margin-left: 10px;margin-right: 10px;margin-top: 13px;height: 118px;
+        background-color: #FFFFFF;-webkit-border-radius: 4px;-moz-border-radius: 4px;
+        border-radius: 4px;box-shadow: 1px 1px 1px 1px lightgrey;">
+            <div style="position: relative">
+                <img src="{{weeksImgScope[0]}}" style="position: absolute;margin-top: 26px;margin-left: 26px;width: 66px;height: 66px;">
+                <span style="position: absolute;font-size: 14px;margin-left: 118px;line-height: 118px">
+                    {{weeksScope[0]}}
+                </span>
+                <span style="position: absolute;font-size: 14px;margin-left: 200px;line-height: 118px" ng-show="isOffer1">
+                    暂未开始
+                </span>
+                <span style="position: absolute;font-size: 14px;margin-left: 150px;line-height: 118px" ng-show="tenHour">
+                    当天预定10点截止
+                </span>
+            </div>
+        </div>
+
+
+        <div ng-click="toPastyMenu(1)" style="margin-left: 10px;margin-right: 10px;margin-top: 13px;height: 118px;
+        background-color: #FFFFFF;-webkit-border-radius: 4px;-moz-border-radius: 4px;
+        border-radius: 4px;box-shadow: 1px 1px 1px 1px lightgrey;">
+            <div style="position: relative">
+                <img src="{{weeksImgScope[1]}}"
+                     style="position: absolute;margin-top: 26px;margin-left: 26px;width: 66px;height: 66px;">
+                <span style="position: absolute;font-size: 14px;margin-left: 118px;line-height: 118px">
+                    {{weeksScope[1]}}
+                </span>
+                <span style="position: absolute;font-size: 14px;margin-left: 200px;line-height: 118px" ng-show="isOffer2">
+                    暂未开始
+                </span>
+            </div>
+        </div>
+
+        <div ng-click="toPastyMenu(2)" style="margin-left: 10px;margin-right: 10px;margin-top: 13px;height: 118px;
+        background-color: #FFFFFF;-webkit-border-radius: 4px;-moz-border-radius: 4px;
+        border-radius: 4px;box-shadow: 1px 1px 1px 1px lightgrey;">
+            <div style="position: relative">
+                <img src="{{weeksImgScope[2]}}" style="position: absolute;margin-top: 26px;margin-left: 26px;width: 66px;height: 66px;">
+                <span style="position: absolute;font-size: 14px;margin-left: 118px;line-height: 118px">
+                    {{weeksScope[2]}}
+                </span>
+                <span style="position: absolute;font-size: 14px;margin-left: 200px;line-height: 118px" ng-show="isOffer3">
+                    暂未开始
+                </span>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
+
+<ion-view view-title="" hide-nav-bar="true" style="background-color: white;z-index: 9999" hide-tabs="true" ng-show="!appType">
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>
+
+
+
+
+

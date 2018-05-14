@@ -1,0 +1,115 @@
+<ion-view view-title="" hide-nav-bar="true" style="background-color: #E5E5E4" hide-tabs="true" ng-show="appType">
+    <ion-header-bar class="bar-clear" style="background-color: white;padding: 0px">
+        <div style="width: 100%">
+            <div class="row col-100" style="padding-bottom: 5px;padding-top: 5px;padding-left: 15px;padding-right: 15px;background-color: #E5E5E4">
+                <div class="col-30" style="padding-top: 10px;width: 30%">
+                    <!--<img src="../img/back.png" style="height: 20px;">-->
+                </div>
+                <!--<div class="col-30" ng-click="volunteerOrderCountCtrlCancel()" style="padding-top: 10px;width: 30%">-->
+                    <!--<img src="../img/back.png" style="height: 20px;">-->
+                <!--</div>-->
+                <div  class="col-40" style="width: 40%;text-align: center;font-size:15px;font-weight: bold;vertical-align: middle;padding-top: 5px;color: black">
+                    {{title}}
+                </div>
+                <div class="col-30" style="line-height: 30px;width: 30%;margin-top: 5px">
+                    <select id="sel" onchange="angular.element(this).scope().choseYear(this.value)" style="vertical-align: middle">
+                    </select>
+                </div>
+            </div>
+            <div style="background-color: #6B6B6B;height: 1px;width: 100%">
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-content style="padding-top: 0px;margin-bottom: 40px;margin-top: 15px" >
+        <div ng-if="isPerson">
+            <div class="row row-100" style="background-color: white;">
+                <div class="col-25" style="text-align: center;font-size: 12px">
+                    姓名
+                </div>
+                <div class="col-25" style="text-align: center;font-size: 12px">
+                    已完成市场(h)
+                </div>
+                <div class="col-25" style="text-align: center;font-size: 12px">
+                    进度比例
+                </div>
+                <div class="col-25" style="text-align: center;font-size: 12px">
+                    整体状态
+                </div>
+            </div>
+            <div style="background-color: black;width:100%;height: 1px;">
+            </div>
+            <div ng-repeat="item in listDeparts | orderBy: 'progressIndex'">
+                <ion-item ng-click="changeShow(item);">
+                    <div class="row">
+                        <img src={{item.subDeparImage}} style="width: 20px;height: 20px">
+                        <div>{{item.subDepartmentName}}</div>
+                    </div>
+                </ion-item>
+                <ion-list ng-if="item.isShow">
+                    <ion-item  ng-repeat="ix in item.oneDepasrtPers | orderBy: 'progressIndex'" >
+                        <div class="row row-100" >
+                            <div class="col-25" style="text-align: center;font-size: 12px">
+                                {{ix.name}}
+                            </div>
+                            <div class="col-25" style="text-align: center;font-size: 12px">
+                                {{ix.didTime}}
+                            </div>
+                            <div class="col-25" style="text-align: center;font-size: 12px">
+                                {{ix.progress}}
+                            </div>
+                            <div class="col-25" style="text-align: center;color: {{ix.stateColor}};font-size: 12px">
+                                {{ix.state}}
+                            </div>
+                        </div>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </div>
+
+        <div ng-if="!isPerson">
+            <div class="row row-100" style="background-color: white">
+                <div class="col-33" style="text-align: center">
+                    姓名
+                </div>
+                <div class="col-33" style="text-align: center">
+                    平均完成时长(h)
+                </div>
+                <div class="col-33" style="text-align: center">
+                    平均完成进度
+                </div>
+            </div>
+            <div style="background-color: black;width:100%;height: 1px;">
+            </div>
+            <div ng-repeat="idepart in listDeparts | orderBy: 'progressIndex'">
+                <div class="row row-100" >
+                    <div class="col-33" style="text-align: center">
+                        {{idepart.subDepartmentName}}
+                    </div>
+                    <div class="col-33" style="text-align: center">
+                        {{idepart.didTime}}
+                    </div>
+                    <div class="col-33" style="text-align: center;color: {{idepart.stateColor}}">
+                        {{idepart.progress}}
+                    </div>
+                </div>
+                <div style="background-color: black;width:100%;height: 1px;">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <div  ng-if="isTotal" style="color: white;background-color:#119B0F;position: fixed;bottom: 0px;
+                text-align: center;width: 100%;height: 40px;padding-top: 10px;font-size: 18px" ng-click="personOrDepart()">
+        {{bottomTitle}}
+    </div>
+</ion-view>
+
+<ion-view view-title="" hide-nav-bar="true" style="background-color: white;z-index: 9999" hide-tabs="true" ng-show="!appType">
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>
+
+
+
+

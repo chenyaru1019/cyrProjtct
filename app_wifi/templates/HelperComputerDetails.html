@@ -1,0 +1,67 @@
+<ion-view view-title="" hide-nav-bar="true"  hide-tabs="true" ng-show="appType">
+    <ion-content style="padding-top: 0px;background-color: #F1F1F1;color: #4A4A4A;font-size: 13px" overflow-scroll="false;">
+        <div style="height: 64px;background: white;padding: 14px 13px">
+            <div style="font-size: 16px;font-weight: bold;color: #000000;">电脑报修</div>
+            <div style="color:#5A5A5A;font-size: 12px;height: 17px;">分派/内部转单</div>
+        </div>
+        <div style="background: white;margin-top: 5px;padding: 0 10px">
+            <div style="padding: 10px 3px">
+                <span style="color: #000000;font-weight: bold;">发起时间</span>
+                <span style="float: right">2018.11.01 08:00:12</span>
+            </div>
+            <hr style="height:2px;border:none;border-top:1px solid #979797;margin: 0" >
+            <div style="padding: 10px 3px">
+                <span style="color: #000000;font-weight: bold;">发起人</span>
+                <span style="float: right">张三</span>
+            </div>
+            <hr style="height:2px;border:none;border-top:1px solid #979797;margin: 0" >
+            <div style="padding: 10px 3px">
+                <div style="margin-bottom: 6px;color: #000000;font-weight: bold;">故障描述</div>
+                <p>故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述</p>
+            </div>
+        </div>
+        <div style="background: white;margin-top: 10px">
+            <div style="padding: 0 10px">
+                <div style="padding: 10px 3px">
+                    <span style="color: #000000;font-weight: bold;">处理团队</span>
+                    <span style="float: right">XXX公司</span>
+                </div>
+                <hr style="height:2px;border:none;border-top:1px solid #979797;margin: 0" >
+                <div style="padding: 10px 3px">
+                    <span style="color: #000000;font-weight: bold;">处理人</span>
+                    <span style="float: right">处理人 123 4567 8901</span>
+                </div>
+                <hr style="height:2px;border:none;border-top:1px solid #979797;margin: 0" >
+                <div style="padding: 10px 3px">
+                    <div style="margin-bottom: 6px;color: #000000;font-weight: bold;">处理日志</div>
+                    <ul>
+                        <li><span>08:04</span><span  style="margin-left:20px">接受报修</span><span style="float: right">维修部</span></li>
+                        <li><span>08:15</span><span  style="margin-left:20px">转单中</span><span style="float: right">维修部</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="height:1px;border:none;border-top:1px solid #979797;margin: 0" >
+            <div style="padding: 15px 13px;text-align: right;">
+                <button style="width: 82px;height: 27px;background: #3396FB;color: #FFFFFF;border: 0;border-radius: 5px;font-size: 13px">催单</button>
+            </div>
+        </div>
+        <div style="height: 166px;background: white;margin-top: 10px;margin-bottom: 10px;padding: 10px 13px">
+            <div>
+                <div style="color: #000000;font-weight: bold;">评分</div>
+                <div style="color: #4A4A4A;font-size: 11px;">您的报修已经处理完了，可以对本次服务进行</div>
+            </div>
+            <div class="center_div" style="height:60px;padding-left: 20px;padding-top: 18px;padding-right: 20px;">
+                 <div style="float:left;white-space:nowrap;margin-left: 7%" ng-repeat="a in starArray" >
+                   <img style="width: 30px;height: 30px" ng-click="clickStar(a)" src="{{a.src}}"/>
+                 </div>
+           </div>
+            <div style="padding: 15px 0;text-align: right;">
+                <button style="width: 82px;height: 27px;background: #3396FB;color: #FFFFFF;border: 0;border-radius: 5px;font-size: 13px">确定</button>
+            </div>
+        </div>
+    </ion-content>
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false" ng-show="!appType">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view view-title="" hide-nav-bar="true" style="background-color: #F1F1F1" hide-tabs="true">
+
+    <ion-content style="padding-top: 0px" ng-show="appType">
+        <div style="height:{{screenHeight}}">
+            <div style="width: 100%;text-align: center;margin-top: auto;margin-bottom: auto;vertical-align: middle">
+                <div style="padding-top: 180px">
+                    <img src="../img/ic_ok_water.png">
+                </div>
+                <div style="padding-top: 20px;font-size: 30px;color: #3C4F5E">
+                    提交成功
+                </div>
+                <div style="color: #9B9B9B;font-size: 14px;margin-top: 10px">
+                    物业正在积极配送 请耐心等待
+                </div>
+            </div>
+            <div style="position: fixed;bottom: 0px;width: 100%;margin-bottom: 30px" ng-click="toHelperWater()">
+                <div style="margin-left: 15px;margin-right: 15px;height: 38px;background-color: #3396FB;font-size: 15px;color: white;text-align: center;
+                    border:1px solid transparent;border-radius: 4pt;padding-top: 7px;">
+                    完成
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <ion-content class="padding" style="padding-top: 0px" overflow-scroll="false" scroll="false" ng-show="!appType">
+        <img src="../img/wrong.png" style="width: 33%;margin-left:33%;margin-top: 20%">
+        <div style="margin-top: 6%;text-align: center;width: 100%;height: 10%;font-size: 20px;color: #808080">当前浏览器无法打开地址</div>
+    </ion-content>
+</ion-view>
+
+
+
