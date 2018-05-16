@@ -34,6 +34,7 @@
                         <!--<option ng-repeat="mo in computerArray" value="{{mo.companyCd}}" >{{mo.companyName}}</option>-->
                     <!--</select>-->
                     <input type="text" ng-model="$parent.company" style=" width: 66%;font-size: 16px;" ng-blur="setBlur()" ng-focus = "setFocus()" placeholder="请选择公司">
+                    <input type="hidden" ng-model="$parent.currentCom"/>
                     <div style="background: white;position: absolute;width: 100%;z-index: 99999;top: 52px;left:0;font-size: 16px" ng-hide="showBlock">
                         <div style="padding: 6px 10px" ng-repeat="d in computerArray | filter:company" ng-click="getVal(d)" ng-model="company">
                             <span ng-bind-html = "d.companyName | wordPlace:company"></span>
@@ -54,6 +55,7 @@
                     <!--</select>-->
                 <!--</div>-->
                 <input type="text" ng-model="$parent.department" style=" width: 66%;font-size: 16px;" ng-blur="setBlurDepartment()" ng-focus = "setFocusDepartment()" placeholder="请选择部门">
+                <input type="hidden" ng-model="$parent.currentDept"/>
                 <div style="background: white;position: absolute;width: 100%;z-index: 99999;top: 111px;left:0;font-size: 16px" ng-hide="showDepartment">
                     <div style="padding: 6px 10px" ng-repeat="dept in currentDeptArray | filter:department" ng-click="getValDepartment(dept)" ng-model="department">
                         <span ng-bind-html = "dept.departmentName | wordPlace:department"></span>
@@ -127,7 +129,7 @@
                         <!--扫描二维码-->
                     <!--</button>-->
                 <!--</div>-->
-                <input style="width: 66%;font-size: 16px;margin-top: 6px"  type="text" placeholder="请扫描二维码（必填）"  ng-click="scan()">
+                <input style="width: 66%;font-size: 16px;margin-top: 6px"  type="text" placeholder="请扫描二维码（必填）" ng-model="$parent.scanCode" ng-click="scan()">
             </div>
             <!--<div ng-show="isShowtf1" class="row" style="width:{{screen.width}};background-color: white;margin-top: -6px">-->
                 <!--<div style="margin-left: 2%;width: 30%;font-size: 16px;color: black;margin-top: 6px"></div>-->

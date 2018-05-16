@@ -12,7 +12,8 @@ angular.module('starter', ['ionic','ionic-datepicker','starter.services', 'start
     'starter.VolunteerCtrl','starter.VolunteerExCtrl','starter.VolunteerMyCtrl','starter.VolunteerOrderLineCtrl','starter.VolunteerOrderCountCtrl',
     'starter.VolunteerOrderStationCtrl','starter.VolunteerRankCtrl','starter.VolunteerStationQueryCtrl','starter.VolunteerConfirmCtrl',
     'starter.VolunteerMyQueryCtrl','starter.VolunteerFeedBackCtrl','starter.VolunteerMyQuitCtrl','starter.PastyFinallyCtrl','starter.VolunteerOrderByTimeCtrl'
-    ,'starter.HelperOfficeCtrl','starter.HelperComputerRepairCtrl','starter.HelperComputerCtrl','starter.HelperComputerHistoryCtrl','starter.HelperComputerDetailsCtrl','starter.HelperPropertyCtrl','starter.HelperWaterCtrl','starter.WaterSuccessCtrl'
+    ,'starter.HelperOfficeCtrl','starter.HelperComputerRepairCtrl','starter.HelperComputerCtrl','starter.HelperComputerHistoryCtrl','starter.HelperComputerDetailsCtrl',
+    'starter.HelperPropertyRepairCtrl','starter.HelperPropertyCtrl','starter.HelperPropertyHistoryCtrl','starter.HelperPropertyDetailsCtrl','starter.HelperWaterCtrl','starter.WaterSuccessCtrl'
     ,'starter.WaterInputCtrl','starter.WaterHistoryCtrl'
     ])
 
@@ -491,12 +492,39 @@ angular.module('starter', ['ionic','ionic-datepicker','starter.services', 'start
               }
           }
       })
+      .state('tab.HelperPropertyRepair', {
+          url: '/HelperPropertyRepair',
+          views: {
+              'tab-MainVC': {
+                  templateUrl: 'templates/HelperPropertyRepair.html',
+                  controller: 'HelperPropertyRepairCtrl'
+              }
+          }
+      })
       .state('tab.HelperProperty', {
           url: '/HelperProperty',
           views: {
               'tab-MainVC': {
                   templateUrl: 'templates/HelperProperty.html',
                   controller: 'HelperPropertyCtrl'
+              }
+          }
+      })
+      .state('tab.HelperPropertyHistory', {
+          url: '/HelperPropertyHistory',
+          views: {
+              'tab-MainVC': {
+                  templateUrl: 'templates/HelperPropertyHistory.html',
+                  controller: 'HelperPropertyHistoryCtrl'
+              }
+          }
+      })
+      .state('tab.HelperPropertyDetails', {
+          url: '/HelperPropertyDetails',
+          views: {
+              'tab-MainVC': {
+                  templateUrl: 'templates/HelperPropertyDetails.html',
+                  controller: 'HelperPropertyDetailsCtrl'
               }
           }
       })

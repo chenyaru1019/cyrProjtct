@@ -30,6 +30,9 @@ angular.module('starter.MainVCCtrl', [])
                     $state.go('tab.HelperWater');
                 } else if (path == 'helpercomputerRepair') {
                     $state.go('tab.HelperComputerRepair');
+                }else if (path == 'helperPropertyRepair') {
+                    console.log(111)
+                    $state.go('tab.HelperPropertyRepair');
                 }else {
                     showAlert("还未开放");
                 }

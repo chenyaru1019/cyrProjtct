@@ -294,6 +294,7 @@ angular.module('starter.HelperComputerCtrl', [])
                         $scope.computerArray = companyA;
                         $scope.deptArray = deptA;
                         $scope.currentDeptArray = deptA[0].department;
+                        console.log($scope.computerArray);
                         console.log($scope.currentDeptArray)
 
                     }else{
@@ -339,7 +340,6 @@ angular.module('starter.HelperComputerCtrl', [])
 
         //提交数据
         $scope.submitMessage = function () {
-
             // //设备地点
             // $scope.roomName = "";
             // //设备型号
@@ -413,7 +413,7 @@ angular.module('starter.HelperComputerCtrl', [])
                     username:username,
                     uuid:uuid
                 };
-
+                console.log(submitData);
                 service.submitComputerMessage(submitData)
                     .then(function (result) {
                         // alert(JSON.stringify(result));
@@ -525,7 +525,7 @@ angular.module('starter.HelperComputerCtrl', [])
             });
 
         });
-
+        $scope.scanCode = '';
         $scope.scan = function () {
 
 
@@ -534,24 +534,25 @@ angular.module('starter.HelperComputerCtrl', [])
             dd.biz.util.scan({
                 type: 'qrCode', // type 为 all、qrCode、barCode，默认是all。
                 onSuccess: function (data) {
-                    alert(data);
+                    // alert(data);
                     //onSuccess将在扫码成功之后回调
                     /* data结构
                       { 'text': String}
                     */
-                    // alert("成功"+JSON.stringify(data));
-                    // var str = localStorage.getItem("name");
-                    // str=encodeURI(encodeURI(str));
-                    // var  result =  data.text+ "&supervisor="+str;
-                    // window.location.href = result;
+                    alert("成功"+JSON.stringify(data));
+                    var str = localStorage.getItem("name");
+                    alert(str);
+                    str=encodeURI(encodeURI(str));
+                    var  result =  data.text+ "&supervisor="+str;
+                    // window.location.href = data.text;
+                    // $scope.scanCode = data.text;
                 },
                 onFail: function (err) {
-                    // alert("错误"+JSON.stringify(err));
+                    alert("错误"+JSON.stringify(err));
                 }
             })
             // });
         }
-
         //测试代码
         $scope.appType = true;
         //网络访问
@@ -562,10 +563,12 @@ angular.module('starter.HelperComputerCtrl', [])
         $scope.showDepartment = true;
         $scope.getVal = function (val) {
             $scope.company = val.companyName;
+            $scope.currentCom = val.companyCd;
             $scope.showBlock = false;
         };
         $scope.getValDepartment = function (val) {
             $scope.department = val.departmentName;
+            $scope.departmentName = val.departmentCd;
             $scope.showDepartment = false;
         };
         $scope.setBlur = function () {
